@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #1D1539;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container::before {
+  content: '';
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background: linear-gradient(60deg, #EB8228, #E659F0);
+  border-radius: 50%;
+  top: 20px;
+  right: 120px;
+  z-index: -1;
+}
+
+.container::after {
+  content: '';
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  background: linear-gradient(60deg, #EB8228, #25f1EB);
+  border-radius: 50%;
+  bottom: 30px;
+  left: 150px;
+}
+
+.container .slider_container {
+  width: 900px;
+  height: 500px;
+  border-radius: 15px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.container .slider_container .scroll_btns {
+  width: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .slider_container .scroll_btns button {
+  font-size: 30px;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+}
+
+.container .slider_container .scroll_btns button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.container .slider {
+  width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.container .slider img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=main.css.map */
